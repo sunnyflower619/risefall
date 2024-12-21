@@ -1,0 +1,90 @@
+ .risecontain {
+    --rise-bg1: #ebebeb;
+    --rise-bg2: #f5f5f5;
+    --rise-text: #5a5959;
+    --rise-accent: #c5a870;
+    --rise-font: 400 .8em "Helvetica", serif;
+    --rise-notefont: 300 10px / 1.5em "Roboto", sans-serif;
+    --rise-notecolor: #878787;
+}
+.risecontain {
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    background-color: var(--rise-bg1);
+    overflow: hidden;
+    border: 1px solid var(--rise-accent);
+    flex-direction: column;
+}
+
+.riseing1 {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.riseing2 {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 1px solid var(--rise-accent);
+    padding: .5rem;
+    background-color: var(--rise-bg2);
+    z-index: 4;
+}
+
+.riseing2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.riseing1 aes {
+    width: 70%;
+    border: 1px solid var(--rise-accent);
+    position: absolute;
+    z-index: 3;
+}
+
+.risecontain deet {
+    font: 800 .8em "Helvetica", serif;
+    text-transform: uppercase;
+    text-align: right;
+    white-space: pre-wrap;
+    width: 70%;
+    align-self: center;
+    color: var(--rise-text);
+    border-right: 2px solid var(--rise-accent);
+    padding-right: 2%;
+    margin-bottom: 5%;
+}
+
+deet i {
+    font: 400 .8em "Helvetica", serif;
+    font-style: italic;
+}
+
+.risepost { font: var(--rise-font); white-space: pre-line; margin: 0 70px 4em; text-align: justify; color: var(--rise-text); letter-spacing: 0.02em; } 
+
+.rise-scroll { max-height: 395px; overflow-y: scroll; margin-right: 60px; padding-right: 10px; } 
+
+.risepost b { color: var(--rise-accent); font-weight: 700; } 
+.risepost i, u {
+    color: var(--rise-accent);
+}
+.risepost u {
+    text-decoration-color: var(--rise-accent);
+    font-weight: bold;
+    color: var(--rise-notecolor);
+text-decoration-thickness: 2px;
+}
+
+.risepost blockquote {
+    background-color: var(--rise-bg2);
+    padding: 1.5rem 2rem;
+    margin: 0rem 1rem;
+}
+.risenotes { background-color: var(--rise-bg2); padding: 2em 70px; letter-spacing:  .06em; text-transform: uppercase; font: var(--rise-notefont); color: var(--rise-notecolor); text-align: justify; text-align-last: center; } 

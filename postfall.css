@@ -1,0 +1,88 @@
+.fallcontain {
+    --fall-bg1: #242424;
+    --fall-bg2: #181818;
+    --fall-text: #888;
+    --fall-accent: #c5a870;
+    --fall-font: 400 .8em "Helvetica", serif;
+    --fall-notefont: 300 10px / 1.5em "Roboto", sans-serif;
+    --fall-notecolor: #999797;
+}
+.fallcontain {
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    background-color: var(--fall-bg1);
+    overflow: hidden;
+    border: 1px solid var(--fall-accent);
+    flex-direction: column;
+}
+
+.falling1 {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.falling2 {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 1px solid var(--fall-accent);
+    padding: .5rem;
+    background-color: var(--fall-bg2);
+    z-index: 4;
+}
+
+.falling2 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.falling1 aes {
+    width: 70%;
+    border: 1px solid var(--fall-accent);
+    position: absolute;
+    z-index: 3;
+}
+
+.fallcontain deet {
+    font: 800 .8em "Helvetica", serif;
+    text-transform: uppercase;
+    text-align: right;
+    white-space: pre-wrap;
+    width: 70%;
+    align-self: center;
+    color: var(--fall-text);
+    border-right: 2px solid var(--fall-accent);
+    padding-right: 2%;
+    margin-bottom: 5%;
+}
+
+deet i {
+    font: 400 .8em "Helvetica", serif;
+    font-style: italic;
+}
+
+.fallpost { font: var(--fall-font); white-space: pre-line; margin: 0 70px 4em; text-align: justify; color: var(--fall-text); letter-spacing: 0.02em; } 
+
+.fall-scroll { max-height: 395px; overflow-y: scroll; margin-right: 60px; padding-right: 10px; } 
+
+.fallpost b { color: var(--fall-accent); font-weight: 700 } 
+.fallpost i { color: var(--fall-accent);}
+.fallpost u {
+    text-decoration-color: var(--fall-accent);
+    font-weight: bold;
+    color: var(--fall-notecolor);
+text-decoration-thickness: 2px;
+}
+
+.fallpost blockquote {
+    background-color: var(--fall-bg2);
+    padding: 1.5rem 2rem;
+    margin: 0rem 1rem;
+}
+.fallnotes { background-color: var(--fall-bg2); padding: 2em 70px; letter-spacing:  .06em; text-transform: uppercase; font: var(--fall-notefont); color: var(--fall-notecolor); text-align: justify; text-align-last: center; } 
